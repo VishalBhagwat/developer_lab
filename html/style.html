@@ -1,0 +1,46 @@
+ 
+ <!Doctype html>
+<html>
+    <head>
+        <title>Style in HTML</title>
+    </head>
+    <body style="background-color:powderblue;">
+         
+        <div>
+            <h1>This is the Heading</h1>
+            <p>This is the Paragraph.</p>
+
+            <h1 style="color:blue;">This is a heading</h1>
+            <p style="color:red;">This is a paragraph.</p> 
+
+            <h1 style="font-family:verdana;">This is a heading</h1>
+            <p style="font-family:courier;">This is a paragraph.</p> 
+
+            <h1 style="font-size:300%;">This is a heading</h1>
+            <p style="font-size:160%;">This is a paragraph.</p> 
+
+            <h1 style="text-align:center;">Centered Heading</h1>
+            <p style="text-align:center;">Centered paragraph.</p> 
+            <h2 id="demo"></h2>
+        </div>
+        <script>
+                var x=document.getElementById("demo");
+                function getLocation()
+                {
+                if (navigator.geolocation)
+                {
+                navigator.geolocation.getCurrentPosition(showPosition);
+                }
+                else{x.innerHTML="Geolocation is not supported by this browser.";}
+                }
+                getLocation();
+                
+                function showPosition(position)
+                {
+                x.innerHTML="Latitude: " + position.coords.latitude +" Longitude: " + position.coords.longitude;
+               
+                }
+                </script>
+    </body>
+</html>
+ 

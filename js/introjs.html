@@ -1,0 +1,32 @@
+<!Doctype html>
+<html>
+
+<head>
+    <title>Introduction Of Js</title>
+</head>
+
+<body>
+
+    <div>
+        <h1>This is the Heading</h1>
+        <p>This is the Paragraph.</p>
+
+        <p id="demo">JavaScript can change HTML content.</p>
+
+        <button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Change Content</button>
+        <button type="button" onclick="document.getElementById('demo').style.fontSize='35px'">Make big font</button>
+        <button type="button" onclick="document.getElementById('demo').style.display='block'">Display Content</button>
+    
+        <button type="button" onclick="document.getElementById('demo').style.display='none'">Hide Content</button>
+    </div>
+    <hr>
+    <button onclick="document.getElementById('myImage').src='bulbon.gif'">Turn on the light</button>
+
+    <img id="myImage" src="bulboff.gif" style="width:100px">
+
+    <button onclick="document.getElementById('myImage').src='bulboff.gif'">Turn off the light</button>
+  
+
+</body>
+
+</html>

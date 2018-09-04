@@ -1,0 +1,58 @@
+<!Doctype html>
+<html>
+
+<head>
+    <title>Function in Javascript</title>
+</head>
+
+<body>
+
+    <div>
+        <h1>This is the Heading</h1>
+        <p>This is the Paragraph.</p>
+
+        <hr/>
+        <h1 id="demo"></h1>
+    </div>
+    <script>
+          var log = console.log;
+        //1. basic function or normal function 
+        var carname = "volvo";
+        function sum_no(a, b) {
+            //carname = "volvo"; 
+            return a + b + carname;
+        }
+
+        console.log(sum_no(4, 5));
+
+        function toCelsius(fahrenheit) {
+            return (5 / 9) * (fahrenheit - 32);
+        }
+        document.getElementById("demo").innerHTML = toCelsius(89);
+        var x = toCelsius(77);
+var text = "The temperature is " + x + " Celsius";
+console.log(text + carname);    
+
+      A();
+function A(){
+  console.log('foo');
+};
+function A(){
+  console.log('foo');
+};
+A();
+
+//  2.     function expression
+var ab = (function(){ log("A"); return 5;} );
+var bc = function(){  log("B");};
+var cd = function(){  log("C");};
+ab();
+
+document.write(ab());
+
+    </script>
+
+
+</body>
+
+</html>

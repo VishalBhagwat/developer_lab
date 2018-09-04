@@ -1,0 +1,48 @@
+
+<!Doctype html>
+<html>
+    <head>
+        <title>Object in Js</title>
+    </head>
+    <body>
+         
+        <div>
+            
+
+
+        </div>
+           <script>
+               var log = console.log;
+           
+               var person= {
+                       name: "Akshay",
+                       age: 25,
+                       lastName: "Kumar",
+                       occupation: "Actor",
+                       fullName: function(){ return this.name +" "+this.lastName}
+
+               }
+               log(person.name);
+               log(person["age"]);
+               log(person.fullName());
+               log(person);
+               var x = new String("logw");
+               x.name="vishu";
+               log(x["1"]);
+               log(Object.keys(x));
+               var y = new Number(58);
+               log(y);
+           
+           
+           
+           
+           
+           
+           
+           </script>
+
+
+      
+    
+    </body>
+</html>
